@@ -16,7 +16,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000", "https://blog-ashy-six-25.vercel.app"],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
@@ -26,8 +26,11 @@ app.use(
 app.use(express.json());
 
 
+///mongodb+srv://regikeerthana3:<db_password>@blogcluster.hq5lu.mongodb.net/
+//mongodb://127.0.0.1:27017/blogdb
+
 mongoose
-  .connect("mongodb://127.0.0.1:27017/blogdb")
+  .connect("mongodb+srv://regikeerthana3:v6ntSBEDgRSJkCwN@blogcluster.hq5lu.mongodb.net/")
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log("MongoDB Connection Error:", err));
 

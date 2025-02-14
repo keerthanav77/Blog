@@ -10,7 +10,7 @@ const SECRET_KEY = "a8f7e4d6c9b1t2m5y3z0x7v6w4p9q";
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "server/uploads/"); 
+    cb(null, "src/pages/api/uploads/"); 
   },
   filename: (req, file, cb) => {
     cb(null, Date.now() + path.extname(file.originalname)); 
