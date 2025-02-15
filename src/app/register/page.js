@@ -37,7 +37,7 @@ export default function Register() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://blog-ashy-six-25.vercel.app/api/auth/register",
         formData
       );
       setSuccess(res.data.message);
