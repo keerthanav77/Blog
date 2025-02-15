@@ -21,7 +21,7 @@ const Home = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const res = await axios.get("https://blog-ashy-six-25.vercel.app/pages/api/posts");
+        const res = await axios.get("https://blog-production-ee3d.up.railway.app/api/posts");
         setPosts(res.data);
       } catch (err) {
         setError("Failed to fetch posts.");

@@ -22,7 +22,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://blog-ashy-six-25.vercel.app/api/auth/login", {
+      const res = await axios.post("https://blog-production-ee3d.up.railway.app/api/auth/login", {
         email,
         password,
       });

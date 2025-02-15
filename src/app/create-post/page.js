@@ -37,7 +37,7 @@ const CreatePost = () => {
 
     try {
       const res = await axios.post(
-        "https://blog-ashy-six-25.vercel.app/api/posts/create",
+        "https://blog-production-ee3d.up.railway.app/api/posts/create",
         formData,
         {
           headers: {
