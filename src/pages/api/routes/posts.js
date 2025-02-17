@@ -3,7 +3,7 @@ const multer = require("multer");
 const path = require("path");
 const Post = require("../models/Post");
 const jwt = require("jsonwebtoken");
-const cloudinary = require("cloudinary");
+const cloudinary = require("../config/cloudinary");
 const { CloudinaryStorage } = require("multer-storage-cloudinary");
 
 const router = express.Router();
