@@ -49,7 +49,7 @@ const Home = () => {
                 <CardMedia
                   component="img"
                   height="200"
-                  image={`http://localhost:5000${post.imageUrl}`}
+                  image={`${post.imageUrl}`}
                   alt="Post Image"
                 />
               )}
